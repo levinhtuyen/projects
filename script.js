@@ -32,7 +32,7 @@ const displayProfile = function (profile) {
             <h2><a href=${profile.blog}><strong>${profile.name}</strong></a></h2>
             <p>${profile.bio}</p>
             <p>
-                <strong>Location:</strong> ${profile.location}
+                <strong>Location:</strong> Ho Chi Minh city
             </p>
             <p>
                 <strong>@${profile.login} </strong>
@@ -73,12 +73,12 @@ const displayRepos = function (repos) {
         listItem.classList.add('repo');
         listItem.innerHTML = `
             <h3>${repo.name}</h3>
-            <span>${repo.description}</span> <br/><br/>
             <span>${devicons[repo.language]}</span> <br />
             <br />
             <a href=${repo.html_url}>View Project</a>`;
         repoList.append(listItem);
     }
+    // <span>${repo.description}</span> <br/><br/>
 };
 
 // dynamic search
